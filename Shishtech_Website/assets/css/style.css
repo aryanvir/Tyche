@@ -799,7 +799,7 @@ img {
 
 .preloader-animation .loader .animated-letters {
     position: relative;
-    color: rgba(0, 0, 0, 0.2);
+    color:#ff9966;
 }
 
 .loader .animated-letters:before {
@@ -807,7 +807,7 @@ img {
     content: attr(data-text-preloader);
     top: -3px;
     left: 0;
-    color: #000000;
+    color: #003366;
     opacity: 0;
     -webkit-transform: rotateY(-90deg);
     transform: rotateY(-90deg);
@@ -853,7 +853,7 @@ img {
 .digimax-preloader p {
     font-family: "Poppins", sans-serif;
     letter-spacing: 8px;
-    color: #3b3b3b;
+    color: #003366;
 }
 
 .digimax-preloader .loader-animation {
