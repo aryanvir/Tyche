@@ -24,13 +24,22 @@
     <!-- Responsive css -->
     <link rel="stylesheet" href="assets/css/responsive.css">
 
+    <link rel="stylesheet" href="assets/css/preloader.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+  <script type="text/javascript"> 
+    $(document).ready( function() {
+      $('#preloader').delay(1000).fadeOut();
+    });
+  </script>
+
 </head>
 
 <body class="homepage-5 dark">
+    
     <!--====== Preloader Area Start ======-->
     <div id="preloader">
         <!-- Digimax Preloader -->
-        <div id="digimax-preloader" class="digimax-preloader">
+        <div id="digimax-preloader" class="digimax-preloader" style="background-color: white;">
             <!-- Preloader Animation -->
             <div class="preloader-animation">
                 <!-- Spinner -->
@@ -43,26 +52,10 @@
                     <span data-text-preloader="H" class="animated-letters">H</span>
                     <span data-text-preloader="E" class="animated-letters">E</span>
                 </div>
-                <p class="fw-5 text-center text-uppercase" >Loading</p>
+                <p class="fw-5 text-center text-uppercase" style="color:gray">Loading</p>
             </div>
             <!-- Loader Animation -->
-            <div class="loader-animation">
-                <div class="row h-100">
-                    <!-- Single Loader -->
-                    <div class="col-3 single-loader p-0">
-                        <div class="loader-bg"></div>
-                    </div>
-                    <!-- Single Loader -->
-                    <div class="col-3 single-loader p-0">
-                        <div class="loader-bg"></div>
-                    </div>
-                    <!-- Single Loader -->
-                    <div class="col-3 single-loader p-0">
-                        <div class="loader-bg"></div>
-                    </div>
-                    <!-- Single Loader -->
-                    <div class="col-3 single-loader p-0">
-                        <div class="loader-bg"></div>
+                       </div>
                     </div>
                 </div>
             </div>
@@ -89,34 +82,10 @@
                     </a>
                     <div class="ml-auto"></div>
                     <!-- Navbar -->
-                    <ul class="navbar-nav items">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="#">Home <i class="fas fa-angle-down ml-1"></i></a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#">Multi-Page <i class="fas fa-angle-right ml-1"></i></a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a href="index.html" class="nav-link">Homepage 1</a></li>
-                                        <li class="nav-item"><a href="index-2.html" class="nav-link">Homepage 2</a></li>
-                                        <li class="nav-item"><a href="index-3.html" class="nav-link">Homepage 3</a></li>
-                                        <li class="nav-item"><a href="index-4.html" class="nav-link">Homepage 4</a></li>
-                                        <li class="nav-item"><a href="index-5.html" class="nav-link">Homepage 5</a></li>
-                                        <li class="nav-item"><a href="index-6.html" class="nav-link">Homepage 6</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#">One-Page <i class="fas fa-angle-right ml-1"></i></a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a href="index-one-page.html" class="nav-link">Homepage 1</a></li>
-                                        <li class="nav-item"><a href="index-2-one-page.html" class="nav-link">Homepage 2</a></li>
-                                        <li class="nav-item"><a href="index-3-one-page.html" class="nav-link">Homepage 3</a></li>
-                                        <li class="nav-item"><a href="index-4-one-page.html" class="nav-link">Homepage 4</a></li>
-                                        <li class="nav-item"><a href="index-5-one-page.html" class="nav-link">Homepage 5</a></li>
-                                        <li class="nav-item"><a href="index-6-one-page.html" class="nav-link">Homepage 6</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
+                    <li class="nav-item">
+                        <a href="index-5.html" class="nav-link">Home</a>
+                    </li>
+                    
                         <li class="nav-item">
                             <a href="about.html" class="nav-link">About</a>
                         </li>
