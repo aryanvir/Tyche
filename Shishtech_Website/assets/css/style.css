@@ -82,7 +82,7 @@ section,
 }
 
 .container {
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -93,7 +93,7 @@ h4,
 h5,
 h6 {
     font-weight: 600;
-    color: #222;
+    color: #fff;
     margin-bottom: 0;
 }
 
@@ -1165,14 +1165,14 @@ header {
 
 .menu .nav-link {
     margin: 0 5px;
-    padding: 10px 5px;
+    padding: 20px 5px;
 }
 
 .menu .dropdown .dropdown-menu .nav-item .nav-link {
     font-size: 1rem;
     background: none;
     margin: 0 5px 16px;
-    padding: 0;
+    padding: 20px;
 }
 
 .menu .nav-link:first-child {
