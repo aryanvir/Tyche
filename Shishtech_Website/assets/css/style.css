@@ -73,7 +73,7 @@ body {
 }
 
 .main {
-    background: #fff;
+    background: #003366
 }
 
 section,
@@ -971,7 +971,7 @@ img {
     width: 50px;
     line-height: 45px;
     border-radius: 50%;
-    background-color: #191919;
+    background-color: #003366;
     text-align: center;
     cursor: pointer;
     z-index: 500;
@@ -984,7 +984,7 @@ img {
     display: block;
     height: 100%;
     font-size: 20px;
-    color: #fff;
+    color: #ff9966;
     margin: 0 auto;
 }
 
@@ -1003,7 +1003,7 @@ header {
 
 .navbar-sticky {
     top: 0;
-    background-color: #fff;
+    background-color: #ff9966;
     -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
     -webkit-transition: all .15s ease-out 0s !important;
@@ -1468,13 +1468,7 @@ body.dark,
 .dark .bg-overlay::after,
 .dark .dark-bg,
 .dark .navbar-sticky-moved-up {
-    background: #06052F !important;
-}
-
-.homepage-5 .btn:active,
-.homepage-5 .btn.btn-bordered:before,
-.homepage-5 .btn.btn-bordered-white:after {
-    background: linear-gradient(45deg, #8340ff 15%, #5900ff 65%);
+    background: #003366 !important;
 }
 
 .homepage-5 .welcome-thumb-2 {
