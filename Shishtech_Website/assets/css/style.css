@@ -69,7 +69,7 @@ body {
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
-    color: #222;
+    color: #ffff;
 }
 
 .main {
@@ -1003,7 +1003,7 @@ header {
 
 .navbar-sticky {
     top: 0;
-    background-color: #ff9966;
+    background-color: #003366;
     -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
     -webkit-transition: all .15s ease-out 0s !important;
@@ -1216,6 +1216,7 @@ header {
 }
 
 .modal-content {
+    background-color: #003366;
     border: none;
     border-radius: 0;
     overflow-x: hidden;
