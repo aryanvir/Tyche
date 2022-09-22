@@ -880,7 +880,7 @@ header {
 
 .navbar-expand.navbar-sticky .navbar-nav .nav-link,
 .navbar-expand.navbar-light .navbar-nav .nav-link {
-    color: #2c2e30;
+    color: #fff;
 }
 
 .navbar-expand .navbar-nav .dropdown-menu .nav-link {
