@@ -17,12 +17,12 @@ tsParticles.load("tsparticles", {
     }
   },
   particles: {
-    color: { value: "#ffffff" },
+    color: { value: "#ff9966" },
     line_linked: {
       color: "#ffffff",
       distance: 150,
       enable: true,
-      opacity: 0.4,
+      opacity: 0.5,
       width: 1
     },
     move: {

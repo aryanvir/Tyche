@@ -715,9 +715,7 @@ img {
 }
 
 /*BACKGROUND IMAGES*/
-.welcome-area {
-    background: rgba(0, 0, 0, 0) url("../img/bg/welcome_bg.jpg") no-repeat fixed center center / cover;
-}
+
 
 .homepage-2 .welcome-area {
     background: rgba(0, 0, 0, 0) url("../img/bg/welcome_bg_2.png") no-repeat scroll center center / cover;
@@ -1050,7 +1048,8 @@ header {
 }
 
 .navbar-sticky .navbar-brand-regular {
-    display: none;
+    display: auto;
+    size: 10vh;
 }
 
 .navbar-sticky .navbar-brand-sticky {
