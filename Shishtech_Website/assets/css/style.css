@@ -282,7 +282,7 @@ img {
     display: inline-block;
     font-size: 56px;
     font-weight: 700;
-    text-transform: lowercase;
+    text-transform: none;
     line-height: 1em;
     letter-spacing: -1.6px;
 }
