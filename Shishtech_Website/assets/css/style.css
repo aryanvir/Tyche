@@ -2719,3 +2719,17 @@ body.dark,
 .rtl .grad-hover::before {
     background: linear-gradient(135deg, #E0040B 0%, #fc5130 100%);
 }
+html::-webkit-scrollbar{
+    width:14px;
+  }
+  
+  html::-webkit-scrollbar-track{
+    background:#333;
+  }
+  
+  html::-webkit-scrollbar-thumb{
+    background:linear-gradient(#ff9966,#ff9966);
+  }
+.nav-link:hover{
+    color:#ff9966
+  }
