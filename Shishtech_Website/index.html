@@ -68,7 +68,7 @@
                 <div class="container header">
                     <!-- Navbar Brand-->
                     <a class="navbar-brand" href="index.html">
-                        <img class="navbar-brand-regular" src="assets/img/logo-no-background-smallv4.png" alt="brand-logo">
+                        <img class="navbar-brand-regular" src="assets/img/logo-no-background-smallv3.png" alt="brand-logo">
                         
                     </a>
                     <div class="ml-auto"></div>
@@ -102,9 +102,9 @@
 
         <!-- ***** Welcome Area Start ***** -->
         <section id="home" class="section welcome-area bg-overlay overflow-hidden d-flex align-items-center">
-            
+            <div  id="tsparticles"></div>
             <div class="container">
-                <div id="tsparticles"></div>
+                
                 <script src='https://cdn.jsdelivr.net/npm/tsparticles@1.37.4/tsparticles.min.js'>
 
                 </script><script  src="./assets/partical.js"></script>
@@ -135,7 +135,14 @@
         <!-- ***** Welcome Area End ***** -->
 
         <!-- ***** Service Area End ***** -->
-        <section id="service" class="section service-area dark-bg ptb_150">
+        <script>
+            function getCordinate(event){
+                let ele = document.querySelector('.cursor');
+                ele.style.left = event.clientX+'px';
+                ele.style.top = event.clientY+'px';
+            }
+        </script>
+        <section  onmousemove="getCordinate(event)" id="service" class="section service-area  blue-bg ptb_150 ">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-10 col-lg-7">
@@ -229,7 +236,7 @@
         <!-- ***** Service Area End ***** -->
 
         <!-- ***** Content Area Start ***** -->
-        <section class="section content-area dark-bg ptb_150">
+        <section class="section content-area black-bg ptb_150">
             <div class="container">
                 <div class="row justify-content-between">
                     <div class="col-12 col-lg-6">
@@ -286,7 +293,9 @@
         <!-- ***** Content Area End ***** -->
 
         <!-- ***** Content Area Start ***** -->
-        <section class="section footer-area dark-bg ptb_150">
+        <section class="section footer-area white-bg ptb_150">
+            <script  src="./assets/partical-blacklinks.js"></script>
+            <div id="particles-black-links"></div>
             <div class="container">
                 <div class="row justify-content-between">
                     <div class="col-12 col-lg-6">
@@ -341,9 +350,9 @@
                         <div class="content-inner text-center pt-sm-4 pt-lg-0 mt-sm-5 mt-lg-0">
                             <!-- Section Heading -->
                             <div class="section-heading text-center mb-3">
-                                <h2 class="text-white">Work smarter,<br> not harder.</h2>
-                                <p class="text-white-50 d-none d-sm-block mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
-                                <p class="text-white-50 d-block d-sm-none mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati.</p>
+                                <h2 class="text-black">Work smarter,<br> not harder.</h2>
+                                <p class="text-black d-none d-sm-block mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
+                                <p class="text-black d-block d-sm-none mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati.</p>
                             </div>
                             <!-- Content List -->
                             <ul class="content-list text-left">
@@ -353,7 +362,7 @@
                                         <span class="color-2"><i class="fas fa-angle-double-right"></i></span>
                                     </div>
                                     <div class="content-text media-body">
-                                        <span class="text-white"><b>Digital Agency &amp; Marketing</b><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, distinctio.</span>
+                                        <span class="text-black"><b>Digital Agency &amp; Marketing</b><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, distinctio.</span>
                                     </div>
                                 </li>
                                 <!-- Single Content List -->
@@ -362,7 +371,7 @@
                                         <span class="color-2"><i class="fas fa-angle-double-right"></i></span>
                                     </div>
                                     <div class="content-text media-body">
-                                        <span class="text-white"><b>Planning To Startup</b><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, distinctio.</span>
+                                        <span class="text-black"><b>Planning To Startup</b><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, distinctio.</span>
                                     </div>
                                 </li>
                                 <!-- Single Content List -->
@@ -371,11 +380,11 @@
                                         <span class="color-2"><i class="fas fa-angle-double-right"></i></span>
                                     </div>
                                     <div class="content-text media-body">
-                                        <span class="text-white"><b>Content Management</b><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, distinctio.</span>
+                                        <span class="text-black"><b>Content Management</b><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, distinctio.</span>
                                     </div>
                                 </li>
                             </ul>
-                            <a href="#" class="btn btn-bordered-white mt-4">Learn More</a>
+                            
                         </div>
                     </div>
                 </div>
@@ -384,7 +393,7 @@
         <!-- ***** Content Area End ***** -->  
 
         <!--====== Footer Area Start ======-->
-        <footer class="section service-area dark-bg" style="color:#003366;background-image:url();">
+        <footer class="section service-area dark-bg" style="color:#003366">
             <!-- Footer Top -->
             <div class="footer-top ptb_100">
                 <div class="container">
@@ -493,5 +502,6 @@
 
     <!-- Active js -->
     <script src="assets/js/active.js"></script>
+    <script></script>
 </body>
 </html>

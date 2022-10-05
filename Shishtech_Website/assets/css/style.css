@@ -138,6 +138,11 @@ a:focus {
     color: #0449c4;
 }
 
+
+.text-black{
+    color: #000;
+}
+
 a,
 a:hover,
 a:focus,
@@ -172,6 +177,7 @@ img {
 /* ******************************
 :: 4.0 COMMON CSS
 ****************************** */
+
 .fw-3 {
     font-weight: 300;
 }
@@ -224,6 +230,8 @@ img {
 .text-secondary {
     color: #666 !important;
 }
+
+
 
 .form-control {
     font-size: 15px;
@@ -552,6 +560,20 @@ img {
         height: 130%;
     }
 }
+
+
+.blue-bg{
+    background-color: #003366;
+}
+
+.black-bg{
+    background-color: #000;
+}
+
+.white-bg{
+    background-color: #fff;
+}
+
 
 /*BACKGROUND OVERLAY*/
 .bg-overlay,
@@ -1225,13 +1247,18 @@ header {
 /* ******************************
 :: 8.4 HOMEPAGE-5 AREA CSS
 ****************************** */
-.dark-bg,
+
 body.dark,
 .dark .bg-overlay::after,
-.dark .dark-bg,
-.dark .navbar-sticky-moved-up {
+.dark .dark .navbar-sticky-moved-up {
     background: #003366 !important;
 }
+
+.dark-bg{
+    background: #000;
+}
+
+
 
 .homepage-5 .welcome-thumb-2 {
     top: 25%;
@@ -1582,6 +1609,16 @@ body.dark,
     display: none;
 }
 
+/* **************** 
+:: Particles CSS 
+******************* */ 
+
+#tsparticles {
+    position : absolute;
+    width:100%;
+    height:100%;
+    z-index:-1;
+  }
 /* ******************************
 :: 11.0 SERVICE AREA CSS
 ****************************** */
@@ -2732,3 +2769,16 @@ html::-webkit-scrollbar{
     color:#ff9966;
   }
   
+
+
+  .cursor{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #fff;
+    border-radius: 100%;
+    mix-blend-mode: exclusion;   
+    transition: 0.1s; 
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+  }

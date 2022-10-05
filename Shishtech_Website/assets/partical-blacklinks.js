@@ -1,4 +1,4 @@
-tsParticles.load("tsparticles", {
+tsParticles.load("particles-black-links", {
   fps_limit: 60,
   interactivity: {
     detect_on: "canvas",
@@ -13,15 +13,14 @@ tsParticles.load("tsparticles", {
     },
     modes: {
       push: { quantity: 4 },
-      attract: { distance: 100, duration: 0.4, factor: 5 }
+      attract: { distance: 200, duration: 0.4, factor: 5 }
     }
   },
   particles: {
     color: { value: "#ff9966" },
-    opacity: 0.9,
     line_linked: {
-      color: { value: "#ffff"},
-      distance: 100,
+      color: "#000",
+      distance: 150,
       enable: true,
       opacity: 0.5,
       width: 1
@@ -42,17 +41,36 @@ tsParticles.load("tsparticles", {
       random: false,
       value: 0.5
     },
-    shape: {   
+    shape: {
+      character: {
+        fill: false,
+        font: "Verdana",
+        style: "",
+        value: "*",
+        weight: "400"
+      },
+      image: {
+        height: 100,
+        replace_color: true,
+        src: "images/github.svg",
+        width: 100
+      },
       polygon: { nb_sides: 5 },
       stroke: { color: "#000000", width: 0 },
       type: "circle"
     },
     size: {
-      anim: { enable: false, size_min: 0.2, speed: 40, sync: false },
+      anim: { enable: false, size_min: 0.1, speed: 40, sync: false },
       random: true,
       value: 5
     }
   },
-  
+  polygon: {
+    draw: { enable: false, lineColor: "#ffffff", lineWidth: 0.5 },
+    move: { radius: 10 },
+    scale: 1,
+    type: "none",
+    url: ""
+  },
   retina_detect: true
 });
