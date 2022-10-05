@@ -21,7 +21,7 @@ tsParticles.load("tsparticles", {
     opacity: 0.9,
     line_linked: {
       color: { value: "#ffff"},
-      distance: 100,
+      distance: 150,
       enable: true,
       opacity: 0.5,
       width: 1
