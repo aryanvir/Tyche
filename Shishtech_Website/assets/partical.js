@@ -1,6 +1,10 @@
-tsParticles.load("tsparticles", {
-  fps_limit: 60,
-  interactivity: {
+
+let i = 0;
+document.querySelectorAll(".tsparticles").forEach((elem) => {
+  tsParticles.set(`tsparticles_${i++}`, elem, {
+    
+    fps_limit: 60,
+    interactivity: {
     detect_on: "canvas",
     events: {
       onclick: { enable: true, mode: "push" },
@@ -56,3 +60,8 @@ tsParticles.load("tsparticles", {
   
   retina_detect: true
 });
+
+})
+
+
+  
