@@ -1613,16 +1613,23 @@ body.dark,
 :: Particles CSS 
 ******************* */ 
 
+<<<<<<< HEAD
 /* ---- tsparticles container ---- */
 
+=======
+>>>>>>> parent of 8e3daec (	modified:   Shishtech_Website/assets/css/style.css)
 #tsparticles {
     position : absolute;
     width:100%;
     height:100%;
     z-index:-1;
+<<<<<<< HEAD
 
 }
   
+=======
+  }
+>>>>>>> parent of 8e3daec (	modified:   Shishtech_Website/assets/css/style.css)
 /* ******************************
 :: 11.0 SERVICE AREA CSS
 ****************************** */
