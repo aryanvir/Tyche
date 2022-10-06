@@ -815,7 +815,7 @@ header {
 
 .navbar-sticky {
     top: 0;
-    background-color: #003366;
+    background-color: #000;
     -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
     -webkit-transition: all .15s ease-out 0s !important;
