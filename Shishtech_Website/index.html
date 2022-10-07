@@ -504,7 +504,7 @@
         document.getElementById("visit-state").textContent=res.value;
         var start= res.value > 40? res.value-25:0
         for (i=start;i<=res.value;i++){
-          await sleep(30);
+          await sleep(80);
           document.getElementById("visits").textContent=i;
         }
 
