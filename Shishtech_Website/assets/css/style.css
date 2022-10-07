@@ -615,7 +615,7 @@ img {
 }
 
 .color-2 {
-    color: #26c6da;
+    color: #003366;
 }
 
 .color-3 {
@@ -636,7 +636,7 @@ img {
 
 .color-1.bg-hover:hover::after,
 .color-1.bg-hover.active::after {
-    background-color: #be63f9;
+    background-color: #ff9966;
 }
 
 .color-2.bg-hover:hover::after,
