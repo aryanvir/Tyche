@@ -23,7 +23,7 @@
 
 </head>
 
-<body class="homepage-5 dark">
+<body  class="homepage-5 dark">
     
     <!--====== Preloader Area Start ======-->
     <div id="preloader">
@@ -82,10 +82,14 @@
                         </li>
                         <li class="nav-item">
                             <a href="#service" class="nav-link">Services</a>
-                        </li>                       
+                        </li>
+                                            
                     </ul>
-                    <!-- Navbar Icons -->
+
                     
+                   
+
+
                     <!-- Navbar Toggler -->
                     <ul class="navbar-nav toggle">
                         <li class="nav-item">
@@ -137,14 +141,8 @@
         <!-- ***** Welcome Area End ***** -->
 
         <!-- ***** Service Area End ***** -->
-        <script>
-            function getCordinate(event){
-                let ele = document.querySelector('.cursor');
-                ele.style.left = event.clientX+'px';
-                ele.style.top = event.clientY+'px';
-            }
-        </script>
-        <section  onmousemove="getCordinate(event)" id="service" class="section service-area  white-bg ptb_150 ">
+        
+        <section  class="section service-area  white-bg ptb_150 ">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-10 col-lg-7">
@@ -240,21 +238,38 @@
             <span id="visits" style="font-size:300%;padding:2vh 0 5vh;color:#f77c3f">1</span>
             <p style="color:#fff">With more than <span id="visit-state"></span> uses, you can trust us to help you.</p>
           </div>
+
+<!-- ***** Content Area Start ***** --><!-- ***** Content Area Start ***** -->
         <!-- ***** Content Area Start ***** -->
-        <section class="section content-area black-bg ptb_150">
+        <section  id="service"class="section content-area black-bg ptb_150">
             <div class="container">
                 <div class="row justify-content-between" style="display:flex;align-items: center; flex-direction: column;">
                     <div class="col-12 col-lg-6">
                         <!-- Content Inner -->
-                        <div class="content-inner text-center">
+                        <div onmousemove="getCordinate(event)" class="content-inner text-center">
                             <!-- Section Heading -->
                             <div class="section-heading text-center mb-3">
                                 <h2 class="text-white">Avail our Services</h2>
-                                <p class="text-white-50 d-none d-sm-block mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
-                                <p class="text-white-50 d-block d-sm-none mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati.</p>
+                                
                             </div>
                             
-                            <a href="form.html" class="btn btn-bordered-white mt-4">Fill the Form</a>
+                            <style>
+                                
+                                .cursor{
+                                    width: 250px;
+                                    height:250px;
+                                    position: absolute;
+                                    background: #fafafa;
+                                    border-radius: 100%;
+                                    mix-blend-mode: exclusion;   
+                                    transition: 0.1s; 
+                                    transform: translate(-50%,-50%);
+                                    pointer-events: none;
+                                }
+                            </style>
+                                                                            
+                            <a href="form.html" class="btn btn-bordered-black mt-4" style="color: #000;">Fill the Form</a>
+                            <div class="cursor"></div>
                         </div>
                     </div>
                 </div>
@@ -471,7 +486,13 @@
     <!-- Active js -->
     <script src="assets/js/active.js"></script>
     <script></script>
-
+    <script>
+        function getCordinate(event){
+            let ele = document.querySelector('.cursor');
+            ele.style.left = event.clientX+'px';
+            ele.style.top = event.clientY+'px';
+        }
+    </script> 
     <script>
         $(document).ready(function(){
           // Add smooth scrolling to all links
@@ -509,6 +530,8 @@
 
       }
         </script>
+
+        
 
 </body>
 </html>

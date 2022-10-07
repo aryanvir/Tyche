@@ -409,6 +409,10 @@ img {
     border: 2px solid #fff;
 }
 
+.btn.btn-bordered-black{background: transparent none repeat scroll 0 0;
+    border: 2px solid #000;}
+
+
 .btn.btn-bordered-white:hover,
 .btn.btn-bordered-white:focus,
 .btn.btn-bordered-white.active {
