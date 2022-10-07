@@ -44,7 +44,7 @@
                   <input type="text" name="twitter" class="form-control middle" id="twitter" placeholder="Twitter Id (@someone)" pattern="@[a-zA-Z0-9]*" required></div>
                 <div style="display:flex; flex-direction:row;align-self:center;">
                   <input type="text" name="linkedin" class="form-control middle" id="linkedin" placeholder="Linkedin Id (someone)" pattern="[a-zA-Z0-9]*" required>
-                <input type="tel" id="phone" name="phone" class="form-control middle" pattern="[0-9]{10}" placeholder="Phone Number (10 digit)" required>
+                <input type="tel" id="phone" name="phone" class="form-control middle" pattern="\+[0-9]{2} [0-9]{10}" placeholder="Phone Number +(country code)(10 digit)" required >
                 </div>
                 
                 <input type="text" name="skills" class="form-control middle" id="skills" placeholder="Skills(comma separated)" required style="margin-top:5vh">
@@ -52,13 +52,13 @@
                 <input type="text" name="edLocation" class="form-control middle " id="edLocation" placeholder="Education Location" required required style="margin-top:5vh">
                 <input type="text" name="edTitle" class="form-control middle " id="edTitle" placeholder="Educational Degree/Title" required>
                 <input type="text" name="edDescrip" class="form-control middle " id="edDescrip" placeholder="Education Description" style="height:10vh;" required>
-                <input type="text" name="edDuration" class="form-control middle " id="edDuration" placeholder="Education Duration(ex:2020-2023)" required>
+                <input type="text" name="edDuration" class="form-control middle " id="edDuration" placeholder="Education Duration(ex:2020-2023)" required pattern="[0-9]{4}-[0-9]{4}">
                 <input type="text" name="proLocation" class="form-control middle " id="proLocation" placeholder="Work Location" required required style="margin-top:5vh">
                 <input type="text" name="proTitle" class="form-control middle " id="proTitle" placeholder="Professional Position/Title" required>
                 <input type="text" name="proDescrip" class="form-control middle " id="proDescrip" placeholder="Profession Description" style="height:10vh;" required>
-                <input type="text" name="proDuration" class="form-control middle " id="proDuration" placeholder="Work Duration(ex:2020-2023)" required>
+                <input type="text" name="proDuration" class="form-control middle " id="proDuration" placeholder="Work Duration(ex:2020-2023)" required pattern="[0-9]{4}-[0-9]{4}">
                 <input type="text" name="cert" class="form-control middle " id="cert" placeholder="Certificate" required required style="margin-top:5vh">
-                <input type="text" name="certDuration" class="form-control middle " id="certDuration" placeholder="Certification Duration(ex:2020-2023)" required>
+                <input type="text" name="certDuration" class="form-control middle " id="certDuration" placeholder="Certification Duration(ex:2020-2023)" required pattern="[0-9]{4}-[0-9]{4}">
               </div>
                 <button class="btn btn-lg btn-primary mybt" type="submit" onclick="">Submit</button>
                 <p class="mt-5 mb-3"></p>

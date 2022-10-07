@@ -82,3 +82,14 @@
 input[type="file"]{
   display:none;
 }
+html::-webkit-scrollbar{
+  width:14px;
+}
+
+html::-webkit-scrollbar-track{
+  background:#333;
+}
+
+html::-webkit-scrollbar-thumb{
+  background:linear-gradient(#ff9966,#ff9966);
+}
