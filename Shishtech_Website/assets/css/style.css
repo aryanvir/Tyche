@@ -901,7 +901,7 @@ header {
 }
 
 .navbar-expand .navbar-nav .nav-link:hover {
-    color: rgba(255, 255, 255, .75);
+    color: #ff9966;
 }
 
 .navbar-expand.navbar-sticky .navbar-nav .nav-link,
