@@ -89,7 +89,8 @@ body {
   left:0;
   height:100%;
   width:100%;
-  background-image: radial-gradient(circle, transparent 0px, #fafafa 105px);
+  
+  background-image: radial-gradient(circle, transparent 0px, #000 0px);
 }
 
 
