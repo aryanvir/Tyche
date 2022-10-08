@@ -1,7 +1,7 @@
 .form-section{
     background-color:#fafafa;
-    
-    
+
+
     width:100%;
 }
 .form{
@@ -82,14 +82,12 @@
 input[type="file"]{
   display:none;
 }
-html::-webkit-scrollbar{
-  width:14px;
-}
 
-html::-webkit-scrollbar-track{
-  background:#333;
-}
-
-html::-webkit-scrollbar-thumb{
-  background:linear-gradient(#ff9966,#ff9966);
+.spotlight{
+  position:absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  background-image:radial-gradient(circle,transparent 100px,rgba(0,0,0,0.95) 160px);
 }
