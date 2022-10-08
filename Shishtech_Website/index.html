@@ -242,11 +242,11 @@
 <!-- ***** Content Area Start ***** --><!-- ***** Content Area Start ***** -->
         <!-- ***** Content Area Start ***** -->
         <section  id="service"class="section content-area black-bg ptb_150">
-            <div class="container">
+            <div onmousemove="getCordinate(event)" class="container">
                 <div class="row justify-content-between" style="display:flex;align-items: center; flex-direction: column;">
                     <div class="col-12 col-lg-6">
                         <!-- Content Inner -->
-                        <div onmousemove="getCordinate(event)" class="content-inner text-center">
+                        <div  class="content-inner text-center">
                             <!-- Section Heading -->
                             <div class="section-heading text-center mb-3">
                                 
@@ -257,6 +257,8 @@
                             <style>
                                 
                                 .cursor{
+                                    align-items: center;
+                                    visibility: inherit;
                                     width: 250px;
                                     height:250px;
                                     position: absolute;
@@ -267,7 +269,12 @@
                                     transform: translate(-50%,-50%);
                                     pointer-events: none;
                                 }
+
+                                .cursor:hover {
+                                    cursor: none
+                                }
                             </style>
+
                                                                             
                             <a href="form.html" class="btn btn-bordered-black mt-4" style="color: #000;">Fill the Form</a>
                             <div class="cursor"></div>
@@ -291,29 +298,29 @@
                                 <!-- Profile Circle -->
                                 <div class="profile-circle circle-lg">
                                     <span class="profile-icon icon-1">
-                                        <img class="icon-1-img" src="assets/img/content/profile-icons/profile_icon_1.svg" />
+                                        <img class="icon-1-img" src="assets/img/content/profile-icons/resume.png" />
                                     </span>
                                     <span class="profile-icon icon-2">
-                                        <img class="icon-2-img" src="assets/img/content/profile-icons/profile_icon_2.svg" />
+                                        <img class="icon-2-img" src="assets/img/content/profile-icons/cv.png" />
                                     </span>
                                     <span class="profile-icon icon-3">
-                                        <img class="icon-3-img" src="assets/img/content/profile-icons/profile_icon_1.svg" />
+                                        <img class="icon-3-img" src="assets/img/content/profile-icons/google-docs.png" />
                                     </span>
                                     <span class="profile-icon icon-4">
-                                        <img class="icon-4-img" src="assets/img/content/profile-icons/profile_icon_2.svg" />
+                                        <img class="icon-4-img" src="assets/img/content/profile-icons/portfolio-folder.png" />
                                     </span>
                                 </div>
 
                                 <!-- Profile Circle -->
                                 <div class="profile-circle circle-md">
                                     <span class="profile-icon icon-5">
-                                        <img class="icon-5-img" src="assets/img/content/profile-icons/profile_icon_3.svg" />
+                                        <img class="icon-5-img" src="assets/img/content/profile-icons/cv.png" />
                                     </span>
                                     <span class="profile-icon icon-6">
-                                        <img class="icon-6-img" src="assets/img/content/profile-icons/profile_icon_3.svg" />
+                                        <img class="icon-6-img" src="assets/img/content/profile-icons/google-docs.png" />
                                     </span>
                                     <span class="profile-icon icon-7">
-                                        <img class="icon-7-img" src="assets/img/content/profile-icons/profile_icon_3.svg" />
+                                        <img class="icon-7-img" src="assets/img/content/profile-icons/portfolio.png" />
                                     </span>
                                 </div>
 
@@ -336,8 +343,8 @@
                             <!-- Section Heading -->
                             <div class="section-heading text-center mb-3">
                                 <h2 class="text-black">Work smarter,<br> not harder.</h2>
-                                <p class="text-black d-none d-sm-block mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
-                                <p class="text-black d-block d-sm-none mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati.</p>
+                                <p class="text-black d-none d-sm-block mt-4">Don't worry about creating a apt CV and portfoilio we will make it for </p>
+                                
                             </div>
                             <!-- Content List -->
                             <ul class="content-list text-left">
@@ -347,7 +354,7 @@
                                         <span class="color-2"><i class="fas fa-angle-double-right"></i></span>
                                     </div>
                                     <div class="content-text media-body">
-                                        <span class="text-black"><b>Digital Agency &amp; Marketing</b><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, distinctio.</span>
+                                        <span class="text-black"><b>Inovative &amp; Creative design</b><br> We have used our desiging and creativeness to create a very unique and apealing portfoilio</span>
                                     </div>
                                 </li>
                                 <!-- Single Content List -->
@@ -356,7 +363,7 @@
                                         <span class="color-2"><i class="fas fa-angle-double-right"></i></span>
                                     </div>
                                     <div class="content-text media-body">
-                                        <span class="text-black"><b>Planning To Startup</b><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, distinctio.</span>
+                                        <span class="text-black"><b>interactive Form</b><br>We have created a portfoilio which is free of cost and .</span>
                                     </div>
                                 </li>
                                 <!-- Single Content List -->
@@ -365,7 +372,7 @@
                                         <span class="color-2"><i class="fas fa-angle-double-right"></i></span>
                                     </div>
                                     <div class="content-text media-body">
-                                        <span class="text-black"><b>Content Management</b><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, distinctio.</span>
+                                        <span class="text-black"><b>Free and Simple !! </b><br>This a simple free cv and portfoilio builder</span>
                                     </div>
                                 </li>
                             </ul>
@@ -421,7 +428,7 @@
                             <div class="footer-items">
                                 <!-- Footer Title -->
                                 <h3 class="footer-title text-white text-uppercase mb-2">Follow Us</h3>
-                                <p class="text-white-50 mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, quae.</p>
+                                <p class="text-white-50 mb-2"> Check out the repo and source code</p>
                                 <!-- Social Icons -->
                                 <ul class="social-icons list-inline pt-2">
                                     <li class="list-inline-item px-1"><a class="text-white-50" href="#"><i class="fab fa-facebook"></i></a></li>
