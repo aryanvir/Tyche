@@ -787,7 +787,7 @@ img {
     width: 50px;
     line-height: 45px;
     border-radius: 50%;
-    background-color: #003366;
+    background-color: rgb(43, 42, 42);
     text-align: center;
     cursor: pointer;
     z-index: 500;
@@ -1696,7 +1696,7 @@ body.dark,
 }
 
 .single-service.service-gallery .service-content {
-    padding: 2rem;
+    padding: 4rem;
 }
 
 .single-service.service-gallery:hover {
