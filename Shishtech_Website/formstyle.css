@@ -91,3 +91,17 @@ input[type="file"]{
   width:100%;
   background-image:radial-gradient(circle,transparent 100px,rgba(0,0,0,0.95) 160px);
 }
+html::-webkit-scrollbar{
+  width:14px;
+}
+
+html::-webkit-scrollbar-track{
+  background:#333;
+}
+
+html::-webkit-scrollbar-thumb{
+  background:linear-gradient(#ff9966,#ff9966);
+}
+.nav-item:hover{
+  color:#ff9966;
+}
