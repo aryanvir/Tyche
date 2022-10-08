@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
 
 <head>
-    
+
     <title>Tyche</title>
 
     <!-- Favicon  -->
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/preloader.css">
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-  <script type="text/javascript"> 
+  <script type="text/javascript">
     $(document).ready( function() {
       $('#preloader').delay(1000).fadeOut();
     });
@@ -24,7 +24,7 @@
 </head>
 
 <body class="homepage-5 dark">
-    
+
     <!--====== Preloader Area Start ======-->
     <div id="preloader">
         <!-- Preloader -->
@@ -70,7 +70,7 @@
                     <!-- Navbar Brand-->
                     <a class="navbar-brand" href="index.html">
                         <img class="navbar-brand-regular" src="assets/img/logo-no-background.png" alt="brand-logo" style="height:45px;width: 175px;">
-                        
+
                     </a>
                     <div class="ml-auto"></div>
                     <!-- Navbar -->
@@ -78,14 +78,14 @@
                     <ul class="navbar-nav items">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html" >Home </a>
-                            
+
                         </li>
                         <li class="nav-item">
                             <a href="#service" class="nav-link">Services</a>
-                        </li>                       
+                        </li>
                     </ul>
                     <!-- Navbar Icons -->
-                    
+
                     <!-- Navbar Toggler -->
                     <ul class="navbar-nav toggle">
                         <li class="nav-item">
@@ -94,7 +94,7 @@
                             </a>
                         </li>
                     </ul>
-                   
+
                 </div>
             </nav>
         </header>
@@ -103,9 +103,9 @@
 
         <!-- ***** Welcome Area Start ***** -->
         <section id="home" class="section welcome-area bg-overlay overflow-hidden d-flex align-items-center">
-            <div  id="tsparticles"></div>    
+            <div  id="tsparticles"></div>
             <div class="container">
-                
+
                 <script src='https://cdn.jsdelivr.net/npm/tsparticles@1.37.4/tsparticles.min.js'>
 
                 </script><script  src="./assets/partical.js"></script>
@@ -116,7 +116,7 @@
                         <div class="welcome-intro">
                             <h1 class="text-white"><span class="fw-4">Welcome to Tyche</span><h1 style="color:#f77c3f">Create Success</h1></h1>
                             <p class="text-white-50 my-4">Our project aims to help the community, who seek trouble in applying for jobs or universities by creating a presentable portfolio for them based on their skills which will help them portray themselves better.  </p>
-                            
+
                         </div>
                     </div>
                     <div class="col-12 col-md-5">
@@ -241,6 +241,35 @@
             <p style="color:#fff">With more than <span id="visit-state"></span> uses, you can trust us to help you.</p>
           </div>
         <!-- ***** Content Area Start ***** -->
+        <section id="mydiv">
+          <div class="spotlight"></div>
+
+
+          <script type="text/javascript">
+            const spotlight= document.getElementsByClassName("spotlight")[0];
+            let spotlightSize = "transparent 100px, rgba(0,0,0,0.95) 160px";
+            document.getElementById("mydiv").addEventListener("mousemove", e=>{
+              requestAnimationFrame(()=>updateSpotlight(e));
+            });
+
+            document.getElementById("mydiv").addEventListener("mousedown", e=>{
+              spotlightSize = "transparent 80px, rgba(0,0,0,1) 110px"
+              requestAnimationFrame(()=>updateSpotlight(e));
+            });
+
+            document.getElementById("mydiv").addEventListener("mouseup", e=>{
+              spotlightSize = "transparent 100px, rgba(0,0,0,0.95) 160px"
+              requestAnimationFrame(()=>updateSpotlight(e));
+            });
+
+            function updateSpotlight(e){
+              const xPos = e.pageX/document.getElementById("mydiv").innerWidth *100;
+              const yPos = e.pageY/document.getElementById("mydiv").innerHeight * 100;
+              spotlight.style.backgroundImage = 'radial-gradient(circle at ${xPos}% ${yPos}%, ${spotlightSize})'
+            }
+          </script>
+        </section>
+
         <section class="section content-area black-bg ptb_150">
             <div class="container">
                 <div class="row justify-content-between" style="display:flex;align-items: center; flex-direction: column;">
@@ -253,7 +282,7 @@
                                 <p class="text-white-50 d-none d-sm-block mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
                                 <p class="text-white-50 d-block d-sm-none mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati.</p>
                             </div>
-                            
+
                             <a href="form.html" class="btn btn-bordered-white mt-4">Fill the Form</a>
                         </div>
                     </div>
@@ -264,7 +293,7 @@
 
         <!-- ***** Content Area Start ***** -->
         <section class="section service-area white-bg ptb_150">
-           
+
             <div class="container">
                 <div class="row justify-content-between">
                     <div class="col-12 col-lg-6">
@@ -311,7 +340,7 @@
                                     </span>
                                 </div>
                             </div>
-                           
+
                         </div>
                     </div>
                     <div class="col-12 col-lg-6">
@@ -353,13 +382,13 @@
                                     </div>
                                 </li>
                             </ul>
-                            
+
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- ***** Content Area End ***** -->  
+        <!-- ***** Content Area End ***** -->
 
         <!--====== Footer Area Start ======-->
         <footer class="section footer-area dark-bg">
@@ -376,7 +405,7 @@
                                     <li class="py-2"><a class="text-white-50" href="about.html">The Team</a></li>
                                     <li class="py-2"><a class="text-white-50" href="about.html">The Product</a></li>
                                 </ul>
-                                
+
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-lg-3">
@@ -386,7 +415,7 @@
                                 <h3 class="footer-title text-white text-uppercase mb-2">Services</h3>
                                 <ul>
                                     <li class="py-2"><a class="text-white-50" href="services.html">Portfolio Builder</a></li>
-                                    
+
                                 </ul>
                             </div>
                         </div>
@@ -477,24 +506,24 @@
         $(document).ready(function(){
           // Add smooth scrolling to all links
           $("a").on('click', function(event) {
-        
-            
+
+
             if (this.hash !== "") {
-              
+
               event.preventDefault();
-        
-              
+
+
               var hash = this.hash;
-        
-              
+
+
               $('html, body').animate({
                 scrollTop: $(hash).offset().top
               }, 750, function(){
-           
-                
+
+
                 window.location.hash = hash;
               });
-            } 
+            }
           });
         });
         const sleep = (milliseconds) => {
