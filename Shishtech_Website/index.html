@@ -235,17 +235,19 @@
         <!-- ***** Service Area End ***** -->
         <div style="display:flex;align-items: center;background-color: #000;color: #fafafa;;flex-direction: column;padding:5vh 2vw;font-size: calc(calc(3vw+3vh)/2)";>
             <span id="visits" style="font-size:300%;padding:2vh 0 5vh;color:#f77c3f">1</span>
-            <p style="color:#fff">With more than <span id="visit-state"></span> users, you can trust us to help you.</p>
+            <p style="color:#fafafa">With more than <span id="visit-state"></span> users, you can trust us to help you.</p>
           </div>
 
 <!-- ***** Content Area Start ***** --><!-- ***** Content Area Start ***** -->
         <!-- ***** Content Area Start ***** -->
-        <section id="mydiv" class="section content-area white-bg" style="cursor:none; padding:10vh;height:350px" >
-            <div class="spotlight"></div>
+        <section id="service" class="section content-area white-bg" style="cursor:none; padding:10vh;height:350px" >
+            
             <div class="container">
+               
                 <div class="row justify-content-between" style="display:flex;align-items: center; flex-direction: column;">
+                    <div class="spotlight"></div>
                     <div class="col-12 col-lg-6">
-
+                        
                         <div  class="content-inner text-center">
 
                             <div class="section-heading text-center mb-3">
@@ -254,9 +256,7 @@
                                 
 
                             </div>
-
                             
-
                             <a href="form.html" class="btn btn-bordered-black mt-4" style="color: #000;">Fill the Form</a>
                           </div>
                         </div>
@@ -266,7 +266,7 @@
               const spotlight= document.getElementsByClassName("spotlight")[0];
 
               let spotlightSize = "transparent 100px, rgba(0,0,0,1) 105px";
-              document.getElementById("mydiv").addEventListener("mousemove", e=>{
+              document.getElementById("service").addEventListener("mousemove", e=>{
                 requestAnimationFrame(()=>updateSpotlight(e));
               });
 
@@ -282,8 +282,8 @@
               // });
 
               function updateSpotlight(e){
-                var divRelHeight=document.getElementById("mydiv").offsetTop;
-                var divHeight=document.getElementById("mydiv").offsetHeight;
+                var divRelHeight=document.getElementById("service").offsetTop;
+                var divHeight=document.getElementById("service").offsetHeight;
 
                 const xPos = (e.pageX/window.innerWidth) *100;
                 const yPos = (e.pageY-divRelHeight)/divHeight *100;

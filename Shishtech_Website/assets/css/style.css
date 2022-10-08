@@ -33,7 +33,7 @@ body {
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
-    color: #ffff;
+    color: #fafafa;
 }
 
 .main {
@@ -60,7 +60,7 @@ body {
 
 
 
-#mydiv{
+#service{
   cursor:none;
   
 }
