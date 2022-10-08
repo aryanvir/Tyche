@@ -1,5 +1,5 @@
 /* ************************************************************
-************************************************************ 
+************************************************************
 *
 *
 ******* :: INDEX OF CSS :: *******
@@ -82,7 +82,19 @@ body {
     width: 90%;
     margin: 0 auto;
 }
+.spotlight{
+  position:absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  background-image: radial-gradient(circle, transparent 100px, rgba(0, 0, 0, 0.85) 160px);
+}
+#mydiv{
 
+
+  cursor:none;
+}
 h1,
 h2,
 h3,
@@ -863,12 +875,12 @@ header {
 
 .navbar .navbar-brand-sticky {
     display: none;
-    
+
 }
 
 .navbar-sticky .navbar-brand-regular {
     display: auto;
-    
+
 }
 
 .navbar-sticky .navbar-brand-sticky {
@@ -1618,9 +1630,9 @@ body.dark,
     display: none;
 }
 
-/* **************** 
-:: Particles CSS 
-******************* */ 
+/* ****************
+:: Particles CSS
+******************* */
 
 /* ---- tsparticles container ---- */
 
@@ -1631,7 +1643,7 @@ body.dark,
     z-index:0;
 
 }
-  
+
 /* ******************************
 :: 11.0 SERVICE AREA CSS
 ****************************** */
@@ -2770,18 +2782,18 @@ body.dark,
 html::-webkit-scrollbar{
     width:14px;
   }
-  
+
   html::-webkit-scrollbar-track{
     background:#333;
   }
-  
+
   html::-webkit-scrollbar-thumb{
     background:linear-gradient(#ff9966,#ff9966);
   }
 .nav-item:hover{
     color:#ff9966;
   }
-  
+
 
 
   .cursor{
@@ -2790,8 +2802,8 @@ html::-webkit-scrollbar{
     position: absolute;
     background: #fff;
     border-radius: 100%;
-    mix-blend-mode: exclusion;   
-    transition: 0.1s; 
+    mix-blend-mode: exclusion;
+    transition: 0.1s;
     transform: translate(-50%,-50%);
     pointer-events: none;
   }

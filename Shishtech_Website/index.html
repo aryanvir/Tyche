@@ -240,49 +240,56 @@
 
 <!-- ***** Content Area Start ***** --><!-- ***** Content Area Start ***** -->
         <!-- ***** Content Area Start ***** -->
-        <section  id="service"class="section content-area black-bg ptb_150">
-            <div onmousemove="getCordinate(event)" class="container">
+        <section id="mydiv" class="section content-area white-bg" style="cursor:none; padding:10vh" >
+            <div class="spotlight"></div>
+            <div class="container">
                 <div class="row justify-content-between" style="display:flex;align-items: center; flex-direction: column;">
                     <div class="col-12 col-lg-6">
-                        <!-- Content Inner -->
+
                         <div  class="content-inner text-center">
-                            <!-- Section Heading -->
+
                             <div class="section-heading text-center mb-3">
-                                
-                                <h2 class="text-white">Avail our Services</h2>
-                                
+
+                                <h2 class="text-black" style="position:relative; color:white; z-index:2;">Avail our Services</h2>
+
                             </div>
-                            <div class ="cursor"id="cursor"></div>
-                            <script src="./script.js"></script>
-                            <style>
-                                
-                                .cursor{
-                                    align-items: center;
-                                    visibility: inherit;
-                                    width: 250px;
-                                    height:250px;
-                                    position: absolute;
-                                    background: #fafafa;
-                                    border-radius: 100%;
-                                    mix-blend-mode: exclusion;   
-                                    transition: 0.1s; 
-                                    transform: translate(-50%,-50%);
-                                    pointer-events: none;
 
-                                }
 
-                                .cursor:hover {
-                                    cursor: none
-                                }
-                            </style>
 
-                                                                            
                             <a href="form.html" class="btn btn-bordered-black mt-4" style="color: #000;">Fill the Form</a>
-                            
+                          </div>
                         </div>
+                      </div>
                     </div>
-                </div>
-            </div>
+            <script type="text/javascript">
+              const spotlight= document.getElementsByClassName("spotlight")[0];
+
+              let spotlightSize = "transparent 100px, rgba(0,0,0,1) 105px";
+              document.getElementById("mydiv").addEventListener("mousemove", e=>{
+                requestAnimationFrame(()=>updateSpotlight(e));
+              });
+
+              // document.getElementById("mydiv").addEventListener("mousedown", e=>{
+              //   spotlightSize = "transparent 80px, rgba(0,0,0,1) 110px"
+              //   console.log()
+              //   requestAnimationFrame(()=>updateSpotlight(e));
+              // });
+              //
+              // document.getElementById("mydiv").addEventListener("mouseup", e=>{
+              //   spotlightSize = "transperant 100px, rgba(0,0,0,0.95) 160px"
+              //   requestAnimationFrame(()=>updateSpotlight(e));
+              // });
+
+              function updateSpotlight(e){
+                var divRelHeight=document.getElementById("mydiv").offsetTop;
+                var divHeight=document.getElementById("mydiv").offsetHeight;
+
+                const xPos = (e.pageX/window.innerWidth) *100;
+                const yPos = (e.pageY-divRelHeight)/divHeight *100;
+
+                spotlight.style.backgroundImage = 'radial-gradient(circle at '+xPos+'% '+yPos+'%, '+spotlightSize+')'
+              }
+            </script>
         </section>
         <!-- ***** Content Area End ***** -->
 
