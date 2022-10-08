@@ -1434,3 +1434,6 @@ html::-webkit-scrollbar{
     color:#ff9966;
   }
   
+.nav-link:hover{
+    color: #f77c3f;
+}
