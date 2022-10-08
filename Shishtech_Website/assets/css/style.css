@@ -1407,21 +1407,7 @@ body.dark,
     -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
 }
-.footer-area .social-icons a {
-    font-size: 22px;
-}
 
-.dark .footer-area .copyright-area {
-    border-top: 1px solid white;
-}
-
-.blog .footer-area {
-    background: white;
-}
-
-.blog .footer-area .footer-bottom {
-    border-top: 1px solid #fafafab7;
-}
 html::-webkit-scrollbar{
     width:14px;
   }
