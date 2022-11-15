@@ -1,9 +1,3 @@
 # Tyche
 
-
-# fix 
-
-# occupation duration pattern to 0-4 
-# education duration pattern to 0-4 
-
-# 
+https://aryanvir.github.io/Tyche/Shishtech_Website/index.html
